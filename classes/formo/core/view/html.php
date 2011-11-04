@@ -455,6 +455,7 @@ class Formo_Core_View_HTML extends Formo_View {
 	public function html()
 	{
 		$this->_auto_id();
+		$this->_field->pre_render();
 		$singletag = in_array($this->_vars['tag'], $this->_singles);
 
 		$str = $this->open();
